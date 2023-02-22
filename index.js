@@ -52,7 +52,8 @@ arr.sort(function (a, b) {
 });
 console.log(arr);
 
-Bonus: function getWordCount(str) {
+// Bonus:
+function getWordCount(str) {
   return str.split(" ").filter(function (n) {
     return n != "";
   }).length;
@@ -72,3 +73,13 @@ console.log(count);
 const count1 = longText.match(/as/g).length;
 
 console.log(count);
+
+// bonus2
+let phraseToCheck = "telephone";
+let phraseReverse = phraseToCheck.split("").reverse().join("");
+
+if (phraseToCheck === phraseReverse) {
+  console.log("The string is a palindorme!");
+} else {
+  console.log("NOT a palindorme!");
+}
